@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/hrcrimson/goblackjack/blackjack"
 	"fmt"
+	"github.com/hrcrimson/goblackjack/blackjack"
 	"github.com/hrcrimson/goinput"
 )
 
@@ -13,7 +13,7 @@ func main() {
 
 	fmt.Println("Welcome to Blackjack!")
 	for !stop {
-		fmt.Println("Wins:",wins,"Losses:",losses)
+		fmt.Println("Wins:", wins, "Losses:", losses)
 		round := blackjack.NewRound()
 		if round.Play() {
 			wins++

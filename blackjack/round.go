@@ -6,14 +6,14 @@ import (
 )
 
 type Round struct {
-	d Deck
-	User Player
+	d      Deck
+	User   Player
 	Dealer Player
 }
 
 func NewRound() Round {
 	deck := NewDeck()
-	return Round{d:deck, User:NewPlayer(&deck), Dealer:NewPlayer(&deck)}
+	return Round{d: deck, User: NewPlayer(&deck), Dealer: NewPlayer(&deck)}
 }
 
 func (r *Round) Play() bool {
@@ -65,4 +65,3 @@ func (r *Round) Play() bool {
 	return true
 
 }
-

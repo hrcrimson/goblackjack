@@ -14,7 +14,7 @@ func (p *Player) DrawCard() Card {
 func (p *Player) Total() int {
 	t := 0
 	for _, card := range p.Hand {
-		t+=card.Value
+		t += card.Value
 	}
 	return t
 }
@@ -28,5 +28,5 @@ func (p *Player) CheckBlackjack() bool {
 }
 
 func NewPlayer(d *Deck) Player {
-	return Player{deck:d}
+	return Player{deck: d}
 }

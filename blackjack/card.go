@@ -24,7 +24,7 @@ var Suits = []string{
 }
 
 type Face struct {
-	Face string
+	Face  string
 	Value int
 }
 
@@ -34,9 +34,9 @@ type Card struct {
 }
 
 func (c Card) String() string {
-	return c.Face.Face+c.Suit
+	return c.Face.Face + c.Suit
 }
 
 func NewCard(f Face, s string) Card {
-	return Card{Face:f, Suit:s}
+	return Card{Face: f, Suit: s}
 }
